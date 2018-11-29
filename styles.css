@@ -1,0 +1,19 @@
+body {
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  background-color: #303030;
+  color: #DAD9D9;
+}
+body .header {
+  height: auto;
+  text-align: center;
+}
+body .main-area {
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
