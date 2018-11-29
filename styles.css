@@ -9,11 +9,5 @@ body .header {
   height: auto;
   text-align: center;
 }
-body .main-area {
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
 /*# sourceMappingURL=styles.css.map */

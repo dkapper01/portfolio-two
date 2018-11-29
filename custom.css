@@ -13,9 +13,6 @@
   justify-content: space-around;
   align-items: center;
 }
-.test-flipper {
-  /* border: 2px solid blue;  */
-}
 
 .count {
   margin-left: 58px;
@@ -36,10 +33,9 @@
   left: 0;
   position: fixed;  
 }
-/* .html-icon {
-  width: 16px;
-  height: 16px; 
-} */
+.guidelines {
+  /* border: 1px solid red;  */
+}
 .github {
   margin-top: 40px;
   top: 1;
@@ -103,7 +99,8 @@
 /* entire container, keeps perspective */
 
 .flip-container {
-  perspective: 700px;
+  padding: 0px; 
+  perspective: 1000px;
   transform-style: preserve-3d;
 }
 
