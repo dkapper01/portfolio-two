@@ -159,7 +159,7 @@ html {
 /* Add a color to the active/current link */
 
 .active {
-  background-color: red; 
+  /* background-color: red;  */
 }
 
 .topnav a.active {
