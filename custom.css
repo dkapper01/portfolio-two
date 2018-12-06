@@ -1,13 +1,37 @@
+body {
+  font-size: 16px; 
+  letter-spacing: -1px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
 .side-menu {
   background-color: #424242;
-  font-size: 10px;
   width: 50px;
   height: 100%;
   top: 0;
   left: 0;
   position: fixed;
+  display: block;
+  
 }
-
+.btn {
+  background-color: #303030;
+  color: #00bfff;
+  border: none;
+  width: 180px; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #DAD9D9;
+}
 .count {
   margin-left: 58px;
   margin-top: 40px;
@@ -15,10 +39,9 @@
 }
 
 .display-box {
-  /* background-color: green; */
   width: 390px;
   height: 250px;
-  margin: 5px;
+  padding: 10px; 
 }
 .icon { 
   width: 35px;
@@ -26,58 +49,94 @@
   margin-left: 7px; 
   left: 0;
   position: fixed;  
-  padding: 0px; 
 }
 .guidelines {
-  /* border: 1px solid red;  */
+  /* border: 1px solid red;   */
+  /* line-height: 80%;  */
 }
 .fav-icon {
   margin-right:9px;
 }
 
-
 .email {
   top: 1;
   margin-top: 40px; 
-  
+  background-image: url("email.png");
+  background-repeat: no-repeat; 
+}
+.email:hover {
+  background-image: url("email_hover.png");
+  background-repeat: no-repeat; 
 }
 
 .github {
   top: 1; 
   margin-top: 95px; 
-  
+  background-image: url("github.png");
+  background-repeat: no-repeat; 
+}
+.github:hover {
+  background-image: url("github_hover.png");
+  background-repeat: no-repeat; 
 }
 
 .linkedin {
-  top: 1;
   margin-top: 155px; 
+  background-image: url("linkedin.png");
+  background-repeat: no-repeat; 
+
+}
+.linkedin:hover {
+  margin-top: 155px; 
+  background-image: url("linkedin_hover.png");
 }
 
 .facebook {
-  margin-top: 214px; 
   top: 1;
+  margin-top: 214px; 
+  background-image: url("facebook.png");
+  background-repeat: no-repeat;   
+}
+.facebook:hover {
+  background-image: url("facebook_hover.png");
+  background-repeat: no-repeat; 
 }
 
 .twitter {
   top: 1; 
   margin-top: 273px; 
-  
+  background-image: url("twitter.png");
+  background-repeat: no-repeat;  
+}
+.twitter:hover {
+  background-image: url("twitter_hover.png");
+  background-repeat: no-repeat;  
+}
+
+.html_characters {
+  color: yellow;
+}
+.style-array {
+  word-spacing: -10px;
 }
 .back {
+  line-height: 120%; 
   background-color: #424242;
+  font-size: 15px; 
   width: 390px;
   height: 250px;
   margin: 5px;
 }
-
-
 .topnav {
-  margin: 0 0 50px 45px;
   background-color: #424242;
+  padding-left: 50px; 
   overflow: hidden;
   top: 0;
   left: 0;
   right: 0;
+  position: fixed; 
+  z-index: 1; 
+  width: 100%;
 }
 
 .topnav a {
@@ -86,20 +145,25 @@
   text-align: center;
   padding: 5px 10px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 /* Change the color of links on hover */
 
 .topnav a:hover {
   background-color: #303030;
+  /* background: red;    */
   color: #dad9d9;
 }
 
 /* Add a color to the active/current link */
 
+.active {
+  background-color: red; 
+}
+
 .topnav a.active {
-  background-color: #303030;
+  background-color: red;
   color: white;
 }
 
@@ -179,4 +243,64 @@
 
 .vertical.flip-container:hover .front {
   transform: rotateX(180deg);
+}
+
+/* .contact-area {
+  height: 500px;
+  width: 100%; 
+  margin-top: 100px; 
+  background-color: #424242; 
+  border: 1px solid blue; 
+} */
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #424242;
+  border-radius: 1px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #303030;
+}
+
+::placeholder {
+  color: #DAD9D9;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #DAD9D9;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #DAD9D9;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #DAD9D9;
+}
+
+input[type=submit] {
+  background-color: #424242;
+  color: #00bfff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  /* background-color: #303030; */
+  color: #DAD9D9;
+}
+
+.contact-box {
+  margin-top: 70px; 
+  border-radius: 5px;
+  background-color: #303030;
+  /* padding: 20px; */
 }
