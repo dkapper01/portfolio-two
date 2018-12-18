@@ -1,12 +1,14 @@
-# portfolio-two
-My portfolio with links to some of my projects and its designed like VC Code
+# My most up to date portfolio
 
+Here is my second portfolio showcasing some of my favorite projects. I tried to make my portfolio unique and styled it like VC Code my favorite text editor. It has links to some of my live projects and some require you to log in. 
 
-* Bullet list
-  * Nested bullet
-    * Sub-nested bullet etc
-      * Bullet list item 2
-* Bullet list
-  * Nested bullet
-    * Sub-nested bullet etc
-      * Bullet list item 2
+* HTML
+* CSS
+* SASS
+* Bootstrap 
+* Javasript  
+* React 
+* Redux 
+* Node.js 
+* Express 
+* MongoDB 
