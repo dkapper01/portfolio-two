@@ -61,55 +61,55 @@ html {
 .email {
   top: 1;
   margin-top: 40px; 
-  background-image: url("email.png");
+  background-image: url("images/email.png");
   background-repeat: no-repeat; 
 }
 .email:hover {
-  background-image: url("email_hover.png");
+  background-image: url("images/email_hover.png");
   background-repeat: no-repeat; 
 }
 
 .github {
   top: 1; 
   margin-top: 95px; 
-  background-image: url("github.png");
+  background-image: url("images/github.png");
   background-repeat: no-repeat; 
 }
 .github:hover {
-  background-image: url("github_hover.png");
+  background-image: url("images/github_hover.png");
   background-repeat: no-repeat; 
 }
 
 .linkedin {
   margin-top: 155px; 
-  background-image: url("linkedin.png");
+  background-image: url("images/linkedin.png");
   background-repeat: no-repeat; 
 
 }
 .linkedin:hover {
   margin-top: 155px; 
-  background-image: url("linkedin_hover.png");
+  background-image: url("images/linkedin_hover.png");
 }
 
 .facebook {
   top: 1;
   margin-top: 214px; 
-  background-image: url("facebook.png");
+  background-image: url("images/facebook.png");
   background-repeat: no-repeat;   
 }
 .facebook:hover {
-  background-image: url("facebook_hover.png");
+  background-image: url("images/facebook_hover.png");
   background-repeat: no-repeat; 
 }
 
 .twitter {
   top: 1; 
   margin-top: 273px; 
-  background-image: url("twitter.png");
+  background-image: url("images/twitter.png");
   background-repeat: no-repeat;  
 }
 .twitter:hover {
-  background-image: url("twitter_hover.png");
+  background-image: url("images/twitter_hover.png");
   background-repeat: no-repeat;  
 }
 
