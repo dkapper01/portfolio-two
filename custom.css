@@ -1,26 +1,9 @@
-body {
-  font-size: 16px; 
-  letter-spacing: -1px;
-}
-html {
-  scroll-behavior: smooth;
-}
 
-.side-menu {
-  background-color: #424242;
-  width: 50px;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;
-  display: block;
-  
-}
-.btn {
+.project_btn {
   background-color: #303030;
   color: #00bfff;
   border: none;
-  width: 180px; 
+  width: 180px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -28,89 +11,59 @@ html {
   margin: 4px 2px;
   border-radius: 2px;
   cursor: pointer;
+  height: 35px;
 }
 .btn:hover {
-  color: #DAD9D9;
+  color: #dad9d9;
 }
-.count {
-  margin-left: 58px;
-  margin-top: 40px;
-  font-size: 15px;
-}
-
 .display-box {
-  width: 390px;
-  height: 250px;
-  padding: 10px; 
-}
-.icon { 
-  width: 35px;
-  height: 35px;
-  margin-left: 7px; 
-  left: 0;
-  position: fixed;  
-}
-.guidelines {
-  /* border: 1px solid red;   */
-  /* line-height: 80%;  */
-}
-.fav-icon {
-  margin-right:9px;
+  width: 370px;
+  height: 240px;
+  padding: 10px;
 }
 
 .email {
-  top: 1;
-  margin-top: 40px; 
   background-image: url("images/email.png");
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 .email:hover {
   background-image: url("images/email_hover.png");
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
 .github {
-  top: 1; 
-  margin-top: 95px; 
   background-image: url("images/github.png");
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 .github:hover {
   background-image: url("images/github_hover.png");
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
 .linkedin {
-  margin-top: 155px; 
   background-image: url("images/linkedin.png");
-  background-repeat: no-repeat; 
-
+  background-repeat: no-repeat;
 }
 .linkedin:hover {
-  margin-top: 155px; 
   background-image: url("images/linkedin_hover.png");
 }
 
 .facebook {
-  top: 1;
-  margin-top: 214px; 
   background-image: url("images/facebook.png");
-  background-repeat: no-repeat;   
+  background-repeat: no-repeat;
 }
 .facebook:hover {
   background-image: url("images/facebook_hover.png");
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
 .twitter {
-  top: 1; 
-  margin-top: 273px; 
   background-image: url("images/twitter.png");
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 .twitter:hover {
   background-image: url("images/twitter_hover.png");
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
 .html_characters {
@@ -119,172 +72,9 @@ html {
 .style-array {
   word-spacing: -10px;
 }
-.back {
-  line-height: 120%; 
-  background-color: #424242;
-  font-size: 15px; 
-  width: 390px;
-  height: 250px;
-  margin: 5px;
-}
-.topnav {
-  background-color: #424242;
-  padding-left: 50px; 
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  right: 0;
-  position: fixed; 
-  z-index: 1; 
-  width: 100%;
-}
-
-.topnav a {
-  float: left;
-  color: #dad9d9;
-  text-align: center;
-  padding: 5px 10px;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-/* Change the color of links on hover */
-
-.topnav a:hover {
-  background-color: #303030;
-  /* background: red;    */
-  color: #dad9d9;
-}
-
-/* Add a color to the active/current link */
-
-.active {
-  /* background-color: red;  */
-}
-
-.topnav a.active {
-  background-color: red;
-  color: white;
-}
-
-/* entire container, keeps perspective */
-
-.flip-container {
-  padding: 0px; 
-  perspective: 1000px;
-  transform-style: preserve-3d;
-}
-
-/*  UPDATED! flip the pane when hovered */
-
-.flip-container:hover .back {
-  transform: rotateY(0deg);
-}
-
-.flip-container:hover .front {
-  transform: rotateY(180deg);
-}
-
-.flip-container,
-.front,
-.back {
-  width: 390px;
-  height: 250px;
-}
-
-/* flip speed goes here */
-
-.flipper {
-  transition: 0.6s;
-  transform-style: preserve-3d;
-  position: relative;
-}
-
-/* hide back of pane during swap */
-
-.front,
-.back {
-  backface-visibility: hidden;
-  transition: 0.6s;
-  transform-style: preserve-3d;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/*  UPDATED! front pane, placed above back */
-
-.front {
-  z-index: 2;
-  transform: rotateY(0deg);
-}
-
-/* back, initially hidden pane */
-
-.back {
-  transform: rotateY(-180deg);
-}
-
-/* 
-	Some vertical flip updates 
-*/
-
-.vertical.flip-container {
-  position: relative;
-}
-
-.vertical .back {
-  transform: rotateX(180deg);
-}
-
-.vertical.flip-container:hover .back {
-  transform: rotateX(0deg);
-}
-
-.vertical.flip-container:hover .front {
-  transform: rotateX(180deg);
-}
-
-/* .contact-area {
-  height: 500px;
-  width: 100%; 
-  margin-top: 100px; 
-  background-color: #424242; 
-  border: 1px solid blue; 
-} */
 
 
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 2px solid #424242;
-  border-radius: 1px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  background-color: #303030;
-}
-
-::placeholder {
-  color: #DAD9D9;
-}
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #DAD9D9;
-  opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #DAD9D9;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-  color: #DAD9D9;
-}
-
-input[type=submit] {
+input[type="submit"] {
   background-color: #424242;
   color: #00bfff;
   padding: 12px 20px;
@@ -293,14 +83,37 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-  /* background-color: #303030; */
-  color: #DAD9D9;
+input[type="submit"]:hover {
+  color: #dad9d9;
 }
 
 .contact-box {
-  margin-top: 70px; 
-  border-radius: 5px;
+  /* margin-top: 70px; */
+  /* border-radius: 5px; */
+  /* background-color: #303030; */
+}
+.form_container {
+  margin: 2% auto; 
+  width: 80%; 
+  /* border: 1px solid red;  */
+}
+#_form {
+  margin-left: 5%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+input, select, textarea{
+  color: rgb(255, 51, 153);
+}
+.form_style {
+  width: 50%; 
   background-color: #303030;
-  /* padding: 20px; */
+  border: 1px solid hsl(0, 0%, 26%);
+  height: 2rem;
+  margin-bottom: 1%; 
+  padding-left: 0.5rem; 
+}
+#subject {
+  padding-top: 0.5rem;
+  height: 4rem; 
 }
