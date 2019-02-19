@@ -79,10 +79,7 @@
     <div class="projects">
           <div class="card">
             <img src="images/TitanSearch.png" class="" alt="Avatar" style="width:100%">
-            <div class="skills-btn btn-position-1">HTML</div>
-            <div class="skills-btn btn-position-2">CSS</div>
-            <div class="skills-btn btn-position-3">Javascript</div>
-            <div class="skills-btn btn-position-4">GCS API</div>
+            <div class="skills-btn btn-position-1">HTML, CSS, Bootstrap, Javascript, Google Custom Search API</div>
                 <a href="https://dkapper01.github.io/TitanHouseSearch/" class="project_btn" target="_blank">
                   Go to Website
                 </a>
@@ -94,6 +91,8 @@
         <div class="card">
           <img src="images/kappernater.png" alt="Avatar" style="width:100%">
               <a href="https://kappernator.herokuapp.com/login" class="project_btn" target="_blank">
+                <div class="skills-btn btn-position-1">HTML, CSS, Bootstrap, Pug, Javascript, Node.js, Express.js, MongoDB </div>
+
                   Go to Website
               </a>
               <a href="https://github.com/dkapper01/researchapp" class="project_btn" style="float:right" target="_blank">
@@ -106,6 +105,7 @@
       <div class="card">
         <img src="images/titansearch-react.png" alt="Avatar" style="width:100%">
             <a href="https://dkapper01.github.io/titan-search-react/" class="project_btn" target="_blank">
+              <div class="skills-btn btn-position-1">HTML, CSS, Bootstrap, Javascript, React.js,  Google Custom Search API</div>
               Go to Website
             </a>
             <a href="https://github.com/dkapper01/titan-search-react" class="project_btn" style="float:right" target="_blank">
@@ -118,6 +118,7 @@
         <img src="images/old-portfolio.png" alt="Avatar" style="width:100%">
         <div class="container">
             <a href="https://dkapper01.github.io/portfolio/" class="project_btn" target="_blank">
+              <div class="skills-btn btn-position-1">HTML, CSS, Sass, Bootstrap, Javascript </div>
               Go to Website
             </a>
             <a href="https://github.com/dkapper01/portfolio" class="project_btn" style="float:right" target="_blank">
@@ -183,6 +184,8 @@
     </div>
 
     <script>
+      let programmer = document.querySelector(".skills-btn");
+
         (function countArr() {
           let output = ``;
           for(var i = 1; i <= 90; i++) {
@@ -199,6 +202,11 @@
           }
           document.getElementById("counting").innerHTML = output; 
         })(); 
+
+        programmer.addEventListener("mouseover", function(event) {
+          console.log("mouseover"); 
+        });
+
       </script>
         
   </body>
