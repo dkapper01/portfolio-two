@@ -72,42 +72,13 @@ body .topnav a {
 
 /* ----- */
 
-
-
-.btn-position-1 {
-  position: absolute; 
-  top: 5%;
-  /* left: 51%; */
-  z-index: 1;
-}
-
-.btn-position-2 {
-  position: absolute; 
-  top: 5%;
-  left: 3%;
-}
-
-.btn-position-3 {
-  position: absolute; 
-  top: 30%;
-  left: 51%;
-}
-
-.btn-position-4 {
-  position: absolute; 
-  top: 30%;
-  left: 3%;
-}
-.skills-btn:hover {
-  display: block; 
-}
-
-.skills-btn{
-  padding-left: 5px; 
+.text-code {
   font-size: 15px; 
   text-align: center; 
   line-height: 35px; 
   color: #dad9d9; 
+  position: absolute; 
+  top: 5%;
 }
 
 .card img:hover {
