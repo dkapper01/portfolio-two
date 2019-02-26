@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="custom.css" />
@@ -66,7 +67,7 @@
         <span style="color: gray">&lt;<span class="code_coloring">body<span style="color: gray">&gt;</span></span>
           <span class="code_spacing">
             <br />
-            <span style="color: gray">&lt;<span class="code_coloring">p<span style="color: gray">&gt;</span></span></span></span></span>I'm a passionate developer dedicated to making amazing web applications!</span><span style="color: gray">&lt;/<span class="code_coloring">p<span style="color: gray">&gt;</span></span><br /><br />
+            <span style="color: gray">&lt;<span class="code_coloring">p<span style="color: gray">&gt;</span></span></span></span></span>I'm a passionate developer dediproject-imged to making amazing web appliproject-imgions!</span><span style="color: gray">&lt;/<span class="code_coloring">p<span style="color: gray">&gt;</span></span><br /><br />
             
           </span>
           <span style="color:gray" class="code_spacing">&lt;<span class="code_coloring">div <span style="color:lightblue">id</span></span></span>=<span class="html_characters">&#39;</span>projects<span class="html_characters">&#39;</span><span style="color: gray">&gt;</span></span></span><br /><br />
@@ -74,48 +75,54 @@
         </div>
         
     <div class="projects">
-          <div class="card">
-            <img src="images/TitanSearch.png" class="" alt="Avatar" style="width:100%">
-            <div class="text-code">HTML5, CSS3, Bootstrap, Javascript, Google Custom Search API</div>
-                <a href="https://dkapper01.github.io/TitanHouseSearch/" class="project_btn" target="_blank">
+          <div class="card"> 
+            <div class="hover-effect">
+                <img src="images/TitanSearch.png" class="project-img" style="width:100%">
+                <div class="project-built-with one"></div>
+            </div>
+
+                <a href="https://dkapper01.github.io/TitanHouseSearch/" class="project-btn" target="_blank">
                   Go to Website
                 </a>
-                <a href="https://github.com/dkapper01/TitanHouseSearch" class="project_btn" style="float:right" target="_blank">
+                <a href="https://github.com/dkapper01/TitanHouseSearch" class="project-btn" style="float:right" target="_blank">
                     Source Code
                 </a>
           </div>
-        
-        <div class="card">
-          <img src="images/kappernater.png" alt="Avatar" style="width:100%">
-              <a href="https://kappernator.herokuapp.com/login" class="project_btn" target="_blank">
-                <div class="text-code ">HTML5, CSS3, Bootstrap, Pug, Javascript, Node.js, Express.js, MongoDB </div>
-                  Go to Website
-              </a>
-              <a href="https://github.com/dkapper01/researchapp" class="project_btn" style="float:right" target="_blank">
-                  Source Code
-              </a>
-        </div>
+
+          <div class="card"> 
+              <div class="">
+                  <img src="images/kappernater.png" class="" style="width:100%">
+                  <!-- <div class="project-built-with two"></div> -->
+              </div>
+  
+                  <a href="https://kappernator.herokuapp.com/login" class="project-btn" target="_blank">
+                    Go to Website
+                  </a>
+                  <a href="https://github.com/dkapper01/researchapp" class="project-btn" style="float:right" target="_blank">
+                      Source Code
+                  </a>
+            </div>
     </div>
 
     <div class="projects">
       <div class="card">
-        <img src="images/titansearch-react.png" alt="Avatar" style="width:100%">
-            <a href="https://dkapper01.github.io/titan-search-react/" class="project_btn" target="_blank">
-              <div class="text-code ">HTML5, CSS3, Bootstrap, Javascript, React.js,  Google Custom Search API</div>
+        <img src="images/titansearch-react.png" style="width:100%">
+            <a href="https://dkapper01.github.io/titan-search-react/" class="project-btn" target="_blank">
+              <!-- <div class="project-built-with ">HTML5, CSS3, Bootstrap, Javascript, React.js,  Google Custom Search API</div> -->
               Go to Website
             </a>
-            <a href="https://github.com/dkapper01/titan-search-react" class="project_btn" style="float:right" target="_blank">
+            <a href="https://github.com/dkapper01/titan-search-react" class="project-btn" style="float:right" target="_blank">
                 Source Code
             </a>
       </div>
       <div class="card">
-        <img src="images/old-portfolio.png" alt="Avatar" style="width:100%">
+        <img src="images/old-portfolio.png" style="width:100%">
         <div class="container">
-            <a href="https://dkapper01.github.io/portfolio/" class="project_btn" target="_blank">
-              <div class="text-code ">HTML5, CSS3, Sass, Bootstrap, Javascript </div>
+            <a href="https://dkapper01.github.io/portfolio/" class="project-btn" target="_blank">
+              <!-- <div class="project-built-with ">HTML5, CSS3, Sass, Bootstrap, Javascript </div> -->
               Go to Website
             </a>
-            <a href="https://github.com/dkapper01/portfolio" class="project_btn" style="float:right" target="_blank">
+            <a href="https://github.com/dkapper01/portfolio" class="project-btn" style="float:right" target="_blank">
                 Source Code
             </a>
         </div>
@@ -178,7 +185,7 @@
     </div>
 
     <script>
-      let programmer = document.querySelector(".text-code");
+      let programmer = document.querySelector(".project-built-with");
 
         (function countArr() {
           let output = ``;
@@ -196,10 +203,23 @@
           }
           document.getElementById("counting").innerHTML = output; 
         })(); 
+        
+        $(".hover-effect").mouseenter(function() {
+          $(".project-built-with").append($("<span>HTML5, CSS3, Bootstrap, Javascript, Google Custom Search API</span>"));
 
-        programmer.addEventListener("mouseover", function(event) {
-          console.log("mouseover"); 
+        }).mouseleave(function() {
+          $(".one").find("span").remove();
         });
+
+        $(".project-built-with").mouseenter(function() {
+          $(".project-img").addClass("over-text-fade");
+
+        }).mouseleave(function() {
+          $(".project-img").removeClass("over-text-fade")
+        });
+
+
+
 
       </script>
         

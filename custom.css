@@ -72,17 +72,26 @@ body .topnav a {
 
 /* ----- */
 
-.text-code {
-  font-size: 15px; 
-  text-align: center; 
-  line-height: 35px; 
-  color: #dad9d9; 
-  position: absolute; 
+.project-built-with {
+  font-size: 15px;
+  text-align: center;
+  line-height: 35px;
+  color: white; 
+  position: absolute;
   top: 5%;
 }
+/* .project-built-with {
+  content: "Daniel has a little lamp";
+} */
 
-.card img:hover {
-  opacity: .2;
+.project-img:hover {
+  opacity: 0.2;
+  background-color: black;
+  content: "Daniel has a little lamp";
+}
+.over-text-fade {
+  opacity: 0.2;
+  content: "Daniel has a little lamp";
 }
 
 .projects {
@@ -90,14 +99,13 @@ body .topnav a {
   margin-left: 5%;
 }
 .card {
-  /* border: 1px solid red;  */
   width: 300px;
   margin: 1rem;
   padding: 0px;
   position: relative;
 }
 
-.project_btn {
+.project-btn {
   border: 1px solid hsl(0, 0%, 26%) !important;
   color: #00bfff;
   border: none;
@@ -107,18 +115,17 @@ body .topnav a {
   margin-top: 5px;
   cursor: pointer;
   height: 35px;
-  /* height: 2rem; */
   float: left;
   line-height: 35px;
 }
-.project_btn:hover {
+.project-btn:hover {
   background-color: #4d4c4c;
 }
 .tinted-image {
   width: 200px;
   background-image: url(images/TitanSearch.png);
 }
-.project_btn .fav-icon {
+.project-btn .fav-icon {
   vertical-align: text-bottom;
   margin-right: 4px;
   width: 10px;
