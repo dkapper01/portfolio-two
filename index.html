@@ -90,9 +90,9 @@
           </div>
 
           <div class="card"> 
-              <div class="">
-                  <img src="images/kappernater.png" class="" style="width:100%">
-                  <!-- <div class="project-built-with two"></div> -->
+              <div class="hover-effect">
+                  <img src="images/kappernater.png" class="project-img" style="width:100%">
+                  <div class="project-built-with two"></div>
               </div>
   
                   <a href="https://kappernator.herokuapp.com/login" class="project-btn" target="_blank">
@@ -103,6 +103,36 @@
                   </a>
             </div>
     </div>
+
+    <div class="projects">
+        <div class="card"> 
+          <!-- <div class="hover-effect"> -->
+              <img src="images/bookstore.png" class="project-img" style="width:100%">
+              <!-- <div class="project-built-with one"></div> -->
+          <!-- </div> -->
+
+              <a href="https://amazing-euclid-4405db.netlify.com/" class="project-btn" target="_blank">
+                Go to Website
+              </a>
+              <a href="https://github.com/dkapper01/bookstorejs" class="project-btn" style="float:right" target="_blank">
+                  Source Code
+              </a>
+        </div>
+
+        <div class="card"> 
+            <!-- <div class="hover-effect"> -->
+                <img src="images/spacex.png" class="project-img" style="width:100%">
+                <div class="project-built-with two"></div>
+            <!-- </div> -->
+
+                <a href="https://guarded-meadow-86430.herokuapp.com/" class="project-btn" target="_blank">
+                  Go to Website
+                </a>
+                <a href="https://github.com/dkapper01/react-graphql-spacex" class="project-btn" style="float:right" target="_blank">
+                    Source Code
+                </a>
+          </div>
+  </div>
 
     <div class="projects">
       <div class="card">
@@ -189,7 +219,7 @@
 
         (function countArr() {
           let output = ``;
-          for(var i = 1; i <= 90; i++) {
+          for(var i = 1; i <= 105; i++) {
             if(i < 10) {
               output +=  `
               <div>&nbsp;${i}</div>
@@ -204,19 +234,19 @@
           document.getElementById("counting").innerHTML = output; 
         })(); 
         
-        $(".hover-effect").mouseenter(function() {
-          $(".project-built-with").append($("<span>HTML5, CSS3, Bootstrap, Javascript, Google Custom Search API</span>"));
+        // $(".hover-effect").mouseenter(function() {
+        //   $(this).append($("<span>HTML5, CSS3, Bootstrap, Javascript, Google Custom Search API</span>"));
 
-        }).mouseleave(function() {
-          $(".one").find("span").remove();
-        });
+        // }).mouseleave(function() {
+        //   $(this).find("span").remove();
+        // });
 
-        $(".project-built-with").mouseenter(function() {
-          $(".project-img").addClass("over-text-fade");
+        // $(".hover-effect").mouseenter(function() {
+        //   $(".project-img").addClass("over-text-fade");
 
-        }).mouseleave(function() {
-          $(".project-img").removeClass("over-text-fade")
-        });
+        // }).mouseleave(function() {
+        //   $(".project-img").removeClass("over-text-fade")
+        // });
 
 
 
