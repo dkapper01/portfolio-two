@@ -11,7 +11,48 @@
     <link rel='shortcut icon' href='/favicon.ico' />
     <title>Daniel Kapper - Portfolio</title>
 <style>
-  
+
+
+
+/* Google Fonts */
+/* @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro); */
+
+/* Global */
+
+body{
+  height: calc(100vh - 8em);
+  /* padding: 4em; */
+  /* color: rgba(255,255,255,.75); */
+  /* font-family: 'Anonymous Pro', monospace;   */
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    /* margin: 0 auto; */
+    border-right: 2px solid rgba(255,255,255,.75);
+    /* font-size: 120%; */
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 45.5em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
   </style>
   </head>
   <body>
@@ -56,6 +97,10 @@
     </div>
 
     <div id="introduction">
+
+
+
+
         <div class="">
             <span style="color: gray">&lt;!</span><span class="code_coloring">DOCTYPE</span> <span style="color:lightblue">html</span><span style="color: gray">&gt;</span><br />
             <span style="color: gray">&lt;</span><span class="code_coloring">html</span><span style="color: gray">&gt;</span><br />
@@ -70,10 +115,14 @@
         <span style="color: gray">&lt;<span class="code_coloring">body<span style="color: gray">&gt;</span></span>
           <span class="code_spacing">
             <br />
-            <span style="color: gray">&lt;<span class="code_coloring">p<span style="color: gray">&gt;</span></span></span></span></span>I'm a passionate web developer dedicated to making awesome web applications!</span><span style="color: gray">&lt;/<span class="code_coloring">p<span style="color: gray">&gt;</span></span><br /><br />
-            
-          </span>
-          <span style="color:gray" class="code_spacing">&lt;<span class="code_coloring">div <span style="color:lightblue">id</span></span></span>=<span class="html_characters">&#39;</span>projects<span class="html_characters">&#39;</span><span style="color: gray">&gt;</span></span></span><br /><br />
+            <span style="color: gray"><span class="code_coloring"><span style="color: gray"></span></span></span></span></span>
+
+                <p class="line-1 anim-typewriter code_spacing"> I'm a passionate web developer dedicated to making awesome web applications!</p>
+          
+                <span class="code_spacing" style="color: gray"><span class="code_coloring"><span style="color: gray"></span>     
+    
+          <!-- </span><br />
+          <span style="color:gray" class="code_spacing">&lt;<span class="code_coloring">div <span style="color:lightblue">id</span></span></span>=<span class="html_characters">&#39;</span>projects<span class="html_characters">&#39;</span><span style="color: gray">&gt;</span></span></span><br /> -->
 
         </div>
         
@@ -108,10 +157,7 @@
 
     <div class="projects">
         <div class="card"> 
-          <!-- <div class="hover-effect"> -->
               <img src="images/bookstore.png" class="project-img" style="width:100%">
-              <!-- <div class="project-built-with one"></div> -->
-          <!-- </div> -->
 
               <a href="https://amazing-euclid-4405db.netlify.com/" class="project-btn" target="_blank">
                 Go to Website
@@ -122,10 +168,8 @@
         </div>
 
         <div class="card"> 
-            <!-- <div class="hover-effect"> -->
                 <img src="images/spacex.png" class="project-img" style="width:100%">
                 <div class="project-built-with two"></div>
-            <!-- </div> -->
 
                 <a href="https://guarded-meadow-86430.herokuapp.com/" class="project-btn" target="_blank">
                   Go to Website
@@ -140,7 +184,6 @@
       <div class="card">
         <img src="images/titansearch-react.png" style="width:100%">
             <a href="https://dkapper01.github.io/titan-search-react/" class="project-btn" target="_blank">
-              <!-- <div class="project-built-with ">HTML5, CSS3, Bootstrap, Javascript, React.js,  Google Custom Search API</div> -->
               Go to Website
             </a>
             <a href="https://github.com/dkapper01/titan-search-react" class="project-btn" style="float:right" target="_blank">
@@ -151,7 +194,6 @@
         <img src="images/old-portfolio.png" style="width:100%">
         <div class="container">
             <a href="https://dkapper01.github.io/portfolio/" class="project-btn" target="_blank">
-              <!-- <div class="project-built-with ">HTML5, CSS3, Sass, Bootstrap, Javascript </div> -->
               Go to Website
             </a>
             <a href="https://github.com/dkapper01/portfolio" class="project-btn" style="float:right" target="_blank">
@@ -160,6 +202,7 @@
         </div>
       </div>
     </div>
+
       </div>
 
         <div id="contact" class="form_container">
@@ -249,6 +292,79 @@
               e.preventDefault();
           });
         });
+
+	function setupTypewriter(t) {
+	    var HTML = t.innerHTML;
+
+	    t.innerHTML = "";
+
+	    var cursorPosition = 0,
+	        tag = "",
+	        writingTag = false,
+	        tagOpen = false,
+	        typeSpeed = 100,
+        tempTypeSpeed = 0;
+
+	    var type = function() {
+        
+	        if (writingTag === true) {
+	            tag += HTML[cursorPosition];
+	        }
+
+	        if (HTML[cursorPosition] === "<") {
+	            tempTypeSpeed = 0;
+	            if (tagOpen) {
+	                tagOpen = false;
+	                writingTag = true;
+	            } else {
+	                tag = "";
+	                tagOpen = true;
+	                writingTag = true;
+	                tag += HTML[cursorPosition];
+	            }
+	        }
+	        if (!writingTag && tagOpen) {
+	            tag.innerHTML += HTML[cursorPosition];
+	        }
+	        if (!writingTag && !tagOpen) {
+	            if (HTML[cursorPosition] === " ") {
+	                tempTypeSpeed = 0;
+	            }
+	            else {
+	                tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+	            }
+	            t.innerHTML += HTML[cursorPosition];
+	        }
+	        if (writingTag === true && HTML[cursorPosition] === ">") {
+	            tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+	            writingTag = false;
+	            if (tagOpen) {
+	                var newSpan = document.createElement("span");
+	                t.appendChild(newSpan);
+	                newSpan.innerHTML = tag;
+	                tag = newSpan.firstChild;
+	            }
+	        }
+
+	        cursorPosition += 1;
+	        if (cursorPosition < HTML.length - 1) {
+	            setTimeout(type, tempTypeSpeed);
+	        }
+
+	    };
+
+	    return {
+	        type: type
+	    };
+	}
+
+	var typer = document.getElementById('typewriter');
+
+	typewriter = setupTypewriter(typewriter);
+
+	typewriter.type();
+
+
       </script>
         
   </body>

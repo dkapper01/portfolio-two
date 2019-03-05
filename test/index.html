@@ -3,70 +3,101 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-      body {
-        background-color: #303030;
-        color: #dad9d9; 
-        margin: auto; 
-        width: 900px;
-        margin-top: 50px; 
-        display: flex;
-        
+      .container {
+        margin: 0 auto;
+        width: 960px;
       }
 
-      .card {
-        width: 300px;
-        position: relative;
-        /* opacity: .5;  */
-      }
-      .card img:hover {
-        opacity: .5;
-      }
-      .skills-btn{
-        background-color: #303030; 
-        width: 45%; 
-        height: 35px;
-        border: 1px solid hsl(0, 0%, 26%) !important;
-        text-align: center; 
-        line-height: 35px; 
-        color: white; 
-        /* z-index: 1; */
-        display: none;
-
-      }
-      .btn-position-1 {
-        position: absolute; 
-        top: 5%;
-        left: 51%;
-      }
-
-      .btn-position-2 {
-        position: absolute; 
-        top: 5%;
-        left: 3%;
-      }
-      
-      .btn-position-3 {
-        position: absolute; 
-        top: 30%;
-        left: 51%;
-      }
-
-      .btn-position-4 {
-        position: absolute; 
-        top: 30%;
-        left: 3%;
-      }
     </style>
   </head>
   <body>
-    <div class="card">        
-        <img src="./TitanSearch.png" style="width:100%" />
-        <div class="skills-btn btn-position-1">HTML</div>
-        <div class="skills-btn btn-position-2">CSS</div>
-        <div class="skills-btn btn-position-3">Javascript</div>
-        <div class="skills-btn btn-position-4">GCS API</div>
+    <div class="container">
+      <h2>Scroll</h2>
+      <link
+        href="https://fonts.googleapis.com/css?family=Lato:100,400,700"
+        rel="stylesheet"
+        type="text/css"
+      />
+
+      <nav class="navigation" id="mainNav">
+        <a class="navigation__link" href="#1">Section 1</a>
+        <a class="navigation__link" href="#2">Section 2</a>
+        <a class="navigation__link" href="#3">Section 3</a>
+        <a class="navigation__link" href="#4">Section 4</a>
+        <a class="navigation__link" href="#5">Section 5</a>
+        <a class="navigation__link" href="#6">Section 6</a>
+        <a class="navigation__link" href="#7">Section 7</a>
+      </nav>
+
+      <div class="page-section hero" id="1">
+        <h1>Smooth scroll, fixed jump menu with active class</h1>
       </div>
-   
+      <div class="page-section" id="2">
+        <h1>Section Two</h1>
+      </div>
+      <div class="page-section" id="3">
+        <h1>Section Three</h1>
+      </div>
+      <div class="page-section" id="4">
+        <h1>Section Four</h1>
+      </div>
+      <div class="page-section" id="5">
+        <h1>Section Five</h1>
+      </div>
+      <div class="page-section" id="6">
+        <h1>Section Six</h1>
+      </div>
+      <div class="page-section" id="7">
+        <h1>Section Seven</h1>
+      </div>
     </div>
   </body>
+
+  <script>
+    $(document).ready(function() {
+      $("a[href*=#]").bind("click", function(e) {
+        e.preventDefault(); // prevent hard jump, the default behavior
+
+        var target = $(this).attr("href"); // Set the target as variable
+
+        // perform animated scrolling by getting top-position of target-element and set it as scroll target
+        $("html, body")
+          .stop()
+          .animate(
+            {
+              scrollTop: $(target).offset().top
+            },
+            600,
+            function() {
+              location.hash = target; //attach the hash (#jumptarget) to the pageurl
+            }
+          );
+
+        return false;
+      });
+    });
+
+    $(window)
+      .scroll(function() {
+        var scrollDistance = $(window).scrollTop();
+
+        // Show/hide menu on scroll
+        //if (scrollDistance >= 850) {
+        //		$('nav').fadeIn("fast");
+        //} else {
+        //		$('nav').fadeOut("fast");
+        //}
+
+        // Assign active class to nav links while scolling
+        $(".page-section").each(function(i) {
+          if ($(this).position().top <= scrollDistance) {
+            $(".navigation a.active").removeClass("active");
+            $(".navigation a")
+              .eq(i)
+              .addClass("active");
+          }
+        });
+      })
+      .scroll();
+  </script>
 </html>
