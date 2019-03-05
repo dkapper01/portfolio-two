@@ -35,12 +35,15 @@
       </div>
     </div>
   </div>
-    <div class="" id="home"> 
+    <div id="home"> 
       <nav class="topnav" id="top-nav" >
-        <a href="#home">
+        <a href="#home" class="slide">
           <img rel="icon" src="images/html-5.png" class="fav-icon icon_size" />home.html
         </a>
-        <a href="#contact">
+        <a href="#projects" class="slide">
+            <img rel="icon" src="images/html-5.png" class="fav-icon icon_size" />projects.html
+          </a>
+        <a href="#contact" class="slide">
           <img rel="icon" src="images/html-5.png"  class="fav-icon icon_size" />contact.html
         </a>
         <a href="http://entrepreneuriallythinking.com/2017/07/26/4-4-local-entrepreneurs-riding-the-health-iot-wave/" target="_blank">
@@ -67,20 +70,19 @@
         <span style="color: gray">&lt;<span class="code_coloring">body<span style="color: gray">&gt;</span></span>
           <span class="code_spacing">
             <br />
-            <span style="color: gray">&lt;<span class="code_coloring">p<span style="color: gray">&gt;</span></span></span></span></span>I'm a passionate developer dediproject-imged to making amazing web appliproject-imgions!</span><span style="color: gray">&lt;/<span class="code_coloring">p<span style="color: gray">&gt;</span></span><br /><br />
+            <span style="color: gray">&lt;<span class="code_coloring">p<span style="color: gray">&gt;</span></span></span></span></span>I'm a passionate web developer dedicated to making awesome web applications!</span><span style="color: gray">&lt;/<span class="code_coloring">p<span style="color: gray">&gt;</span></span><br /><br />
             
           </span>
           <span style="color:gray" class="code_spacing">&lt;<span class="code_coloring">div <span style="color:lightblue">id</span></span></span>=<span class="html_characters">&#39;</span>projects<span class="html_characters">&#39;</span><span style="color: gray">&gt;</span></span></span><br /><br />
 
         </div>
         
-    <div class="projects">
+    <div id="projects" class="projects">
           <div class="card"> 
             <div class="hover-effect">
                 <img src="images/TitanSearch.png" class="project-img" style="width:100%">
                 <div class="project-built-with one"></div>
             </div>
-
                 <a href="https://dkapper01.github.io/TitanHouseSearch/" class="project-btn" target="_blank">
                   Go to Website
                 </a>
@@ -234,23 +236,19 @@
           document.getElementById("counting").innerHTML = output; 
         })(); 
         
-        // $(".hover-effect").mouseenter(function() {
-        //   $(this).append($("<span>HTML5, CSS3, Bootstrap, Javascript, Google Custom Search API</span>"));
-
-        // }).mouseleave(function() {
-        //   $(this).find("span").remove();
-        // });
-
-        // $(".hover-effect").mouseenter(function() {
-        //   $(".project-img").addClass("over-text-fade");
-
-        // }).mouseleave(function() {
-        //   $(".project-img").removeClass("over-text-fade")
-        // });
-
-
-
-
+        $(document).ready(function() {
+          $('.slide').click(function(e) {
+            
+            var targetHref = $(this).attr('href');
+            
+	  
+            $('html, body').animate({
+              scrollTop: $(targetHref).offset().top - 50
+            }, 500);
+              
+              e.preventDefault();
+          });
+        });
       </script>
         
   </body>
