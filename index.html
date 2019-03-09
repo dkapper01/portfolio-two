@@ -10,24 +10,13 @@
     <link rel="stylesheet" href="custom.css" />
     <link rel='shortcut icon' href='/favicon.ico' />
     <title>Daniel Kapper - Portfolio</title>
+
 <style>
 
 
-
-/* Google Fonts */
-/* @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro); */
-
-/* Global */
-
-body{
-  height: calc(100vh - 8em);
-  /* padding: 4em; */
-  /* color: rgba(255,255,255,.75); */
-  /* font-family: 'Anonymous Pro', monospace;   */
-}
 .line-1{
     position: relative;
-    top: 50%;  
+    top: 50%;
     width: 24em;
     /* margin: 0 auto; */
     border-right: 2px solid rgba(255,255,255,.75);
@@ -35,7 +24,8 @@ body{
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
+    transform: translateY(-50%);
+
 }
 
 /* Animation */
@@ -45,13 +35,16 @@ body{
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 45.5em;}
+  to{
+    width: 45em;
+    
+    /* border: 1px solid red;  */
+  }
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
-
 
   </style>
   </head>
@@ -84,9 +77,9 @@ body{
         <a href="#projects" class="slide">
             <img rel="icon" src="images/html-5.png" class="fav-icon icon_size" />projects.html
           </a>
-        <a href="#contact" class="slide">
+        <!-- <a href="#contact" class="slide">
           <img rel="icon" src="images/html-5.png"  class="fav-icon icon_size" />contact.html
-        </a>
+        </a> -->
         <a href="http://entrepreneuriallythinking.com/2017/07/26/4-4-local-entrepreneurs-riding-the-health-iot-wave/" target="_blank">
           <img rel="icon" src="images/link.png"  class="fav-icon icon_size" />media
         </a>        
@@ -97,10 +90,6 @@ body{
     </div>
 
     <div id="introduction">
-
-
-
-
         <div class="">
             <span style="color: gray">&lt;!</span><span class="code_coloring">DOCTYPE</span> <span style="color:lightblue">html</span><span style="color: gray">&gt;</span><br />
             <span style="color: gray">&lt;</span><span class="code_coloring">html</span><span style="color: gray">&gt;</span><br />
@@ -117,110 +106,114 @@ body{
             <br />
             <span style="color: gray"><span class="code_coloring"><span style="color: gray"></span></span></span></span></span>
 
-                <p class="line-1 anim-typewriter code_spacing"> I'm a passionate web developer dedicated to making awesome web applications!</p>
-          
-                <span class="code_spacing" style="color: gray"><span class="code_coloring"><span style="color: gray"></span>     
-    
-          <!-- </span><br />
-          <span style="color:gray" class="code_spacing">&lt;<span class="code_coloring">div <span style="color:lightblue">id</span></span></span>=<span class="html_characters">&#39;</span>projects<span class="html_characters">&#39;</span><span style="color: gray">&gt;</span></span></span><br /> -->
-
-        </div>
-        
-    <div id="projects" class="projects">
-          <div class="card"> 
-            <div class="hover-effect">
-                <img src="images/TitanSearch.png" class="project-img" style="width:100%">
-                <div class="project-built-with one"></div>
-            </div>
-                <a href="https://dkapper01.github.io/TitanHouseSearch/" class="project-btn" target="_blank">
-                  Go to Website
-                </a>
-                <a href="https://github.com/dkapper01/TitanHouseSearch" class="project-btn" style="float:right" target="_blank">
-                    Source Code
-                </a>
-          </div>
-
-          <div class="card"> 
-              <div class="hover-effect">
-                  <img src="images/kappernater.png" class="project-img" style="width:100%">
-                  <div class="project-built-with two"></div>
-              </div>
+            <!-- <div id="typedtext" class="code_spacing"></div> -->
+            <!-- <div class=""> -->
+            <!-- </div> -->
+                    <span class="code_coloring code_spacing">&lt;p&gt;</span>Email: <span style="color:rgb(255, 51, 153)">dkapper01@gmail.com</span><span class="code_coloring ">&lt;p&gt;</span><br /><br />
   
-                  <a href="https://kappernator.herokuapp.com/login" class="project-btn" target="_blank">
-                    Go to Website
-                  </a>
-                  <a href="https://github.com/dkapper01/researchapp" class="project-btn" style="float:right" target="_blank">
-                      Source Code
-                  </a>
-            </div>
-    </div>
 
-    <div class="projects">
-        <div class="card"> 
-              <img src="images/bookstore.png" class="project-img" style="width:100%">
+            <p class="line-1 anim-typewriter code_spacing"><span style="color: gray">&lt;</span><span class="code_coloring">p<span style="color: gray">&gt;</span></span>I'm a passionate web developer dedicated to making awesome web apps!<span style="color: gray">&lt;/</span><span class="code_coloring">p<span style="color: gray">&gt;</span></span></p>
 
-              <a href="https://amazing-euclid-4405db.netlify.com/" class="project-btn" target="_blank">
-                Go to Website
-              </a>
-              <a href="https://github.com/dkapper01/bookstorejs" class="project-btn" style="float:right" target="_blank">
-                  Source Code
-              </a>
+            
+            <!-- <p id="test"class="line-1 anim-typewriter code_spacing"><span style="color: gray">&lt;</span><span class="code_coloring">p<span style="color: gray">&gt;</span></span>Let's talk dkapper01@gmail.com<span style="color: gray">&lt;/</span><span class="code_coloring">p<span style="color: gray">&gt;</span></span></p> -->
+
+            <span class="code_spacing" style="color: gray"><span class="code_coloring"><span style="color: gray"></span>     
+
+
+
+          &lt;<span class="code_coloring">h1<span style="color: gray">&gt;</span></span></span></span>Personal Projects<span style="color: gray">&lt;</span><span class="code_coloring">h1<span style="color: gray">&gt;</span>
+
         </div>
 
-        <div class="card"> 
-                <img src="images/spacex.png" class="project-img" style="width:100%">
-                <div class="project-built-with two"></div>
-
-                <a href="https://guarded-meadow-86430.herokuapp.com/" class="project-btn" target="_blank">
-                  Go to Website
-                </a>
-                <a href="https://github.com/dkapper01/react-graphql-spacex" class="project-btn" style="float:right" target="_blank">
-                    Source Code
-                </a>
+        <div id="projects" class="projects">
+          <div class="card-container">
+              <div class="card">
+                  <img src="./images/TitanSearch.png" alt="" class="image">
+                  <div class="overlay">
+                    <div class="text">
+                      HTML, CSS, Bootstrap, Javascript, GCS API
+                    </div>
+                  </div>
+              </div>
+                <a href="https://dkapper01.github.io/TitanHouseSearch/" target="_blank" class="project-btn">Go to Website</a>
+                <a href="https://github.com/dkapper01/TitanHouseSearch" target="_blank" class="project-btn">Source Code</a>
           </div>
-  </div>
 
-    <div class="projects">
-      <div class="card">
-        <img src="images/titansearch-react.png" style="width:100%">
-            <a href="https://dkapper01.github.io/titan-search-react/" class="project-btn" target="_blank">
-              Go to Website
-            </a>
-            <a href="https://github.com/dkapper01/titan-search-react" class="project-btn" style="float:right" target="_blank">
-                Source Code
-            </a>
-      </div>
-      <div class="card">
-        <img src="images/old-portfolio.png" style="width:100%">
-        <div class="container">
-            <a href="https://dkapper01.github.io/portfolio/" class="project-btn" target="_blank">
-              Go to Website
-            </a>
-            <a href="https://github.com/dkapper01/portfolio" class="project-btn" style="float:right" target="_blank">
-                Source Code
-            </a>
+          <div class="card-container">
+              <div class="card">
+                  <img src="./images/kappernater.png" alt="" class="image">
+                  <div class="overlay">
+                    <div class="text">
+                      Bootstrap, Javascript, Node, Express, Passport.js, MongoDB
+                    </div>
+                  </div>
+              </div>
+                <a href="https://kappernator.herokuapp.com/login" target="_blank" class="project-btn">Go to Website</a>
+                <a href="https://github.com/dkapper01/researchapp" target="_blank" class="project-btn">Source Code</a>
+          </div>
+
+          <div class="card-container">
+              <div class="card">
+                  <img src="./images/spacex.png" alt="" class="image">
+                  <div class="overlay">
+                    <div class="text">
+                      Javascript, React, GraphQL, SpaceX API
+                    </div>
+                  </div>
+              </div>
+                <a href="https://guarded-meadow-86430.herokuapp.com/" target="_blank" class="project-btn">Go to Website</a>
+                <a href="https://github.com/dkapper01/react-graphql-spacex" target="_blank" class="project-btn">Source Code</a>
+          </div>
+
+          <div class="card-container">
+              <div class="card">
+                  <img src="./images/bookstore.png" alt="" class="image">
+                  <div class="overlay">
+                    <div class="text">
+                      HTML, CSS, Bootstrap, Javascript, API
+                    </div>
+                  </div>
+              </div>
+                <a href="https://amazing-euclid-4405db.netlify.com/" target="_blank" class="project-btn">Go to Website</a>
+                <a href="https://github.com/dkapper01/bookstorejs" target="_blank" class="project-btn">Source Code</a>
+          </div>
+
+          <div class="card-container">
+              <div class="card">
+                  <img src="./images/titansearch-react.png" alt="" class="image">
+                  <div class="overlay">
+                    <div class="text">
+                      HTML, CSS, Bootstrap, Javascript, React, GCS API
+                    </div>
+                  </div>
+              </div>
+                <a href="https://dkapper01.github.io/titan-search-react/" target="_blank" class="project-btn">Go to Website</a>
+                <a href="https://github.com/dkapper01/titan-search-react" target="_blank" class="project-btn">Source Code</a>
+          </div>
+
+          <div class="card-container">
+              <div class="card">
+                  <img src="./images/old-portfolio.png" alt="" class="image">
+                  <div class="overlay">
+                    <div class="text">
+                      HTML, CSS, Bootstrap, Javascript
+                    </div>
+                  </div>
+              </div>
+                <a href="https://dkapper01.github.io/portfolio/" target="_blank" class="project-btn">Go to Website</a>
+                <a href="https://github.com/dkapper01/portfolio" target="_blank" class="project-btn">Source Code</a>
+          </div>
         </div>
-      </div>
-    </div>
+
+
 
       </div>
 
         <div id="contact" class="form_container">
-            <span class="code_coloring ">&lt;div <span style="color:rgb(255, 51, 153)">id</span></span>=<span class="html_characters">&#39;</span>form<span class="html_characters">&#39;</span><span class="code_coloring">&gt;</span></span><br /><br />
-          <div class=""><span class="code_coloring code_spacing">&lt;h2&gt;</span><span class="">Let's get in touch and chat.</span><span class="code_coloring">&lt;h2&gt;</span>
+          <div class="">
           </div>
-                  <span class="code_coloring code_spacing">&lt;p&gt;</span>Also, you can reach me at <span style="color:rgb(255, 51, 153)">dkapper01@gmail.com</span><span class="code_coloring ">&lt;p&gt;</span><br /><br />
-            <span class="code_coloring code_spacing">&lt;from&gt;</span>
-        <div id="_form">
-            <form action="https://formspree.io/dkapper01@gmail.com" method="POST">
-              <input type="text" class="form_style" id="fname" name="name" placeholder="Your name.."><br />
-              <input type="text" class="form_style" id="lname" name="email" placeholder="Your email.."><br />
-              <textarea id="subject" class="form_style" name="subject" placeholder="Write something.."></textarea><br />
-              <input type="submit" value="Submit">
-            </form>
-          </div> 
-          <span class="code_coloring code_spacing">&lt;/from&gt;</span><br />
-          <span class="code_coloring">&lt;/div&gt;</span><br /><br />
+                  <!-- <span class="code_coloring">&lt;p&gt;</span>Also, you can reach me at <span style="color:rgb(255, 51, 153)">dkapper01@gmail.com</span><span class="code_coloring ">&lt;p&gt;</span><br /><br /> -->
+
 
 
 
@@ -260,11 +253,55 @@ body{
     </div>
 
     <script>
+    
+    // set up text to print, each item in array is new line
+var aText = new Array(
+"I'm a passionate web developer dedicated to making awesome web applications!", 
+"Also, you can reach me at dkapper01@gmail.com"
+);
+var iSpeed = 100; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "|";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter();
+    
+    </script>
+
+    <script>
+
       let programmer = document.querySelector(".project-built-with");
 
         (function countArr() {
           let output = ``;
-          for(var i = 1; i <= 105; i++) {
+          for(var i = 1; i <= 90; i++) {
             if(i < 10) {
               output +=  `
               <div>&nbsp;${i}</div>
@@ -292,79 +329,7 @@ body{
               e.preventDefault();
           });
         });
-
-	function setupTypewriter(t) {
-	    var HTML = t.innerHTML;
-
-	    t.innerHTML = "";
-
-	    var cursorPosition = 0,
-	        tag = "",
-	        writingTag = false,
-	        tagOpen = false,
-	        typeSpeed = 100,
-        tempTypeSpeed = 0;
-
-	    var type = function() {
-        
-	        if (writingTag === true) {
-	            tag += HTML[cursorPosition];
-	        }
-
-	        if (HTML[cursorPosition] === "<") {
-	            tempTypeSpeed = 0;
-	            if (tagOpen) {
-	                tagOpen = false;
-	                writingTag = true;
-	            } else {
-	                tag = "";
-	                tagOpen = true;
-	                writingTag = true;
-	                tag += HTML[cursorPosition];
-	            }
-	        }
-	        if (!writingTag && tagOpen) {
-	            tag.innerHTML += HTML[cursorPosition];
-	        }
-	        if (!writingTag && !tagOpen) {
-	            if (HTML[cursorPosition] === " ") {
-	                tempTypeSpeed = 0;
-	            }
-	            else {
-	                tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-	            }
-	            t.innerHTML += HTML[cursorPosition];
-	        }
-	        if (writingTag === true && HTML[cursorPosition] === ">") {
-	            tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-	            writingTag = false;
-	            if (tagOpen) {
-	                var newSpan = document.createElement("span");
-	                t.appendChild(newSpan);
-	                newSpan.innerHTML = tag;
-	                tag = newSpan.firstChild;
-	            }
-	        }
-
-	        cursorPosition += 1;
-	        if (cursorPosition < HTML.length - 1) {
-	            setTimeout(type, tempTypeSpeed);
-	        }
-
-	    };
-
-	    return {
-	        type: type
-	    };
-	}
-
-	var typer = document.getElementById('typewriter');
-
-	typewriter = setupTypewriter(typewriter);
-
-	typewriter.type();
-
-
+  
       </script>
         
   </body>
